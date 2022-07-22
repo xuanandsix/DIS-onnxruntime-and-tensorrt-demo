@@ -28,6 +28,3 @@ if __name__ == "__main__":
     img = cv2.imread('test.jpg')
     output = isnet.forward(img)
     cv2.imwrite('output_onnx.png', output)
-
-
-# ./trtexec --onnx=/data3/mushu/github/DIS/isnet.onnx --saveEngine=/data3/mushu/github/DIS/isnet.engine --verbose

@@ -71,10 +71,3 @@ if __name__ == "__main__":
     image = cv2.imread('test.jpg')
     output = isnet.forward(image)
     cv2.imwrite('output_trt.png', output)
-
- 
-    
-# cd /data1/cv/softs/TensorRT-7.2.1.6/bin/
-# export LD_LIBRARY_PATH=/data1/cv/softs/TensorRT-7.2.1.6/lib:/usr/local/lib64:/usr/local/cuda-11.1/lib64:$LD_LIBRARY_PATH
-
-

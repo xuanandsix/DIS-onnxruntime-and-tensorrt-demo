@@ -9,13 +9,15 @@ Official code: https://github.com/xuebinqin/DIS
 
 ## test tensorrt
 1、Use trtexec tool convert onnx model to trt model. You can also try something else, please make sure to get the correct trt model.
-  Name it isnet.engine.
-2、run python demo_trt.py, get image output.
+  Name it isnet.engine. <br>
+2、run python demo_trt.py, get image output. <br>
 
 ## TO DO
 - [ ] c++ code for tensorrt
 
-# output compare
+## output compare
 
+###
 | input | pytorch| onnx | tensorrt|
 | :-: |:-:| :-:|:-:|
+|<img src="https://github.com/xuanandsix/DIS-onnxruntime-and-tensorrt-demo/raw/main/test.jpg" >|<img src="https://github.com/xuanandsix/DIS-onnxruntime-and-tensorrt-demo/raw/main/imgs/output_torch.png">|<img src="https://github.com/xuanandsix/DIS-onnxruntime-and-tensorrt-demo/raw/main/imgs/output_onnx.png" >|<img src="https://github.com/xuanandsix/DIS-onnxruntime-and-tensorrt-demo/raw/main/imgs/output_trt.png">|

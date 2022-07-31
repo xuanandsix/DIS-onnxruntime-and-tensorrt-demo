@@ -594,21 +594,22 @@ class ISNetDIS(nn.Module):
         d1 = self.side1(hx1d)
         d1 = _upsample_like(d1,x)
 
-        d2 = self.side2(hx2d)
-        d2 = _upsample_like(d2,x)
+        # d2 = self.side2(hx2d)
+        # d2 = _upsample_like(d2,x)
 
-        d3 = self.side3(hx3d)
-        d3 = _upsample_like(d3,x)
+        # d3 = self.side3(hx3d)
+        # d3 = _upsample_like(d3,x)
 
-        d4 = self.side4(hx4d)
-        d4 = _upsample_like(d4,x)
+        # d4 = self.side4(hx4d)
+        # d4 = _upsample_like(d4,x)
 
-        d5 = self.side5(hx5d)
-        d5 = _upsample_like(d5,x)
+        # d5 = self.side5(hx5d)
+        # d5 = _upsample_like(d5,x)
 
-        d6 = self.side6(hx6)
-        d6 = _upsample_like(d6,x)
+        # d6 = self.side6(hx6)
+        # d6 = _upsample_like(d6,x)
 
         # d0 = self.outconv(torch.cat((d1,d2,d3,d4,d5,d6),1))
 
-        return [F.sigmoid(d1), F.sigmoid(d2), F.sigmoid(d3), F.sigmoid(d4), F.sigmoid(d5), F.sigmoid(d6)],[hx1d,hx2d,hx3d,hx4d,hx5d,hx6]
+        #return [F.sigmoid(d1), F.sigmoid(d2), F.sigmoid(d3), F.sigmoid(d4), F.sigmoid(d5), F.sigmoid(d6)],[hx1d,hx2d,hx3d,hx4d,hx5d,hx6]
+        return F.sigmoid(d1)

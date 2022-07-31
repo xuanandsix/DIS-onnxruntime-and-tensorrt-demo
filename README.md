@@ -12,12 +12,15 @@ Official code: https://github.com/xuebinqin/DIS
   Name it isnet.engine. <br>
 2、run python demo_trt.py, get image output. <br>
 
-## TO DO
-- [ ] c++ code for tensorrt
+## test cpp tensorrt
+1、cd cpp & mkdir build & cd build <br>
+2、modify CMakeLists.txt to your environment <br>
+3、cmake .. & make <br>
+4、./cpp
 
 ## output compare
 
 ###
-| input | pytorch| onnx | tensorrt|
-| :-: |:-:| :-:|:-:|
-|<img src="https://github.com/xuanandsix/DIS-onnxruntime-and-tensorrt-demo/raw/main/test.jpg" >|<img src="https://github.com/xuanandsix/DIS-onnxruntime-and-tensorrt-demo/raw/main/imgs/output_torch.png">|<img src="https://github.com/xuanandsix/DIS-onnxruntime-and-tensorrt-demo/raw/main/imgs/output_onnx.png" >|<img src="https://github.com/xuanandsix/DIS-onnxruntime-and-tensorrt-demo/raw/main/imgs/output_trt.png">|
+| input | pytorch| onnx | tensorrt| cpp_trt |
+| :-: |:-:| :-:|:-:|:-:|
+|<img src="https://github.com/xuanandsix/DIS-onnxruntime-and-tensorrt-demo/raw/main/test.jpg" >|<img src="https://github.com/xuanandsix/DIS-onnxruntime-and-tensorrt-demo/raw/main/imgs/output_torch.png">|<img src="https://github.com/xuanandsix/DIS-onnxruntime-and-tensorrt-demo/raw/main/imgs/output_onnx.png" >|<img src="https://github.com/xuanandsix/DIS-onnxruntime-and-tensorrt-demo/raw/main/imgs/output_trt.png">|<img src="https://github.com/xuanandsix/DIS-onnxruntime-and-tensorrt-demo/raw/main/imgs/output_cpp_trt.png">|

@@ -16,7 +16,7 @@ Official code: https://github.com/xuebinqin/DIS
 1、cd cpp & mkdir build & cd build <br>
 2、modify CMakeLists.txt to your environment <br>
 3、cmake .. & make <br>
-4、./cpp
+4、./dis
 
 ## output compare
 

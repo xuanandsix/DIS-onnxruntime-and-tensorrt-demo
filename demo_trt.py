@@ -61,7 +61,7 @@ class ISNetDemo:
             output = np.zeros(out['shape'],out['dtype'])
             cuda.memcpy_dtoh(output, out['allocation'])
             outputs.append(output)
-        output = outputs[-6].squeeze()
+        output = outputs[0].squeeze()
         output = output * 255
         output = cv2.resize(output, (w, h), interpolation=cv2.INTER_LANCZOS4)
         return output

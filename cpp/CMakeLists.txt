@@ -16,8 +16,8 @@ find_package(CUDA REQUIRED)
 include_directories(/usr/local/cuda-11.4.4/targets/x86_64-linux/include)
 link_directories(/usr/local/cuda-11.4.4/lib64)
 # tensorrt
-include_directories(/data3/mushu/0616/lanenet-tensorrt/TensorRT-8.2.1.8/include)
-link_directories(/data3/mushu/0616/lanenet-tensorrt/TensorRT-8.2.1.8/targets/x86_64-linux-gnu/lib/)
+include_directories(path/TensorRT-8.2.1.8/include)
+link_directories(path/TensorRT-8.2.1.8/targets/x86_64-linux-gnu/lib/)
 
 # opencv
 include_directories(/usr/local/include/opencv4/)

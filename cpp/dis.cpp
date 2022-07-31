@@ -58,7 +58,7 @@ int main()
 {
     Logger gLogger;
     nvinfer1::IRuntime* engine_runtime = nvinfer1::createInferRuntime(gLogger);
-    std::string engine_filepath = "../../isnet.trt";
+    std::string engine_filepath = "../../isnet.engine";
     std::ifstream file;
     file.open(engine_filepath, std::ios::binary | std::ios::in);
     file.seekg(0, std::ios::end);
